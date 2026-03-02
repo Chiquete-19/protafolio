@@ -31,7 +31,7 @@ export default function Hero() {
                     variants={item}
                     className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient"
                 >
-                    Fernando Chiquete Velazquez
+                    Fernando Chiquete Velzquez
                 </motion.h1>
 
                 <motion.h2
