@@ -53,9 +53,11 @@ export default function Hero() {
                     variants={item}
                     className="mt-10 flex justify-center gap-6"
                 >
-                    <button className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:-translate-y-1">
-                        <a href="#Projects">Ver Proyectos</a>
-                    </button>
+                     <a className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:-translate-y-1"
+                      href="#Projects">
+                     Ver Proyectos
+                     </a>
+
 
                     <button className="px-6 py-3 border border-slate-600 rounded-xl hover:border-blue-500 hover:text-blue-500 transition-all duration-300 hover:-translate-y-1">
                         Contacto
