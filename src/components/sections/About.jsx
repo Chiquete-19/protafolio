@@ -1,9 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
-
-const volverInicio = () => {
-    window.location.href = "index"; // Recarga la página en la raíz
-};
+import { Link } from "react-router-dom";
 
 export default function About() {
     return (
@@ -60,8 +57,10 @@ export default function About() {
                                 viewport={{ once: true }}
                                 className="flex gap-4 mt-8 justify-center"
                             >
-                                <button onClick={volverInicio} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full center">Regresar</button>
+
+                                <Link to="/" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full center">Regresar</Link>
                             
+
                             </motion.div>
                         </motion.div>
 

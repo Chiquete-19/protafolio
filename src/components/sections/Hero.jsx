@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
 const container = {
     hidden: {},
@@ -10,9 +11,7 @@ const container = {
     }
 }
 
-const About=()=>{
-    window.location.href = "/about";
-}
+console.log("Render Home");
 
 const item = {
     hidden: { opacity: 0, y: 40 },
@@ -58,10 +57,10 @@ export default function Hero() {
                     variants={item}
                     className="mt-10 flex justify-center gap-6"
                 >
-                     <a className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:-translate-y-1"
-                      onClick={About}>
+                     <Link className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:-translate-y-1"
+                      to="/about">
                      Acerca de mi
-                     </a>
+                     </Link>
 
 
                     <button className="px-6 py-3 border border-slate-600 rounded-xl hover:border-blue-500 hover:text-blue-500 transition-all duration-300 hover:-translate-y-1">
