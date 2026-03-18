@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 
 const volverInicio = () => {
-    window.location.href = "index.html"; // Recarga la página en la raíz
+    window.location.href = "index"; // Recarga la página en la raíz
 };
 
 export default function About() {
