@@ -10,6 +10,10 @@ const container = {
     }
 }
 
+const About=()=>{
+    window.location.href = "/about";
+}
+
 const item = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0 }
@@ -55,7 +59,7 @@ export default function Hero() {
                     className="mt-10 flex justify-center gap-6"
                 >
                      <a className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:-translate-y-1"
-                      href="about">
+                      onClick={About}>
                      Acerca de mi
                      </a>
 

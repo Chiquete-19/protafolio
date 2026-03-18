@@ -3,9 +3,4 @@
       { "src": "/about", "dest": "/about.html" },
       { "src":"/index", "dest":"/index.html"}
     ]
-    ,
-        "rewrites": [
-          { "source": "/about", "destination": "/about.html" },
-          {"source":"/index", "destination":"/index.html"}
-        ]
 }
