@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 import projects from "../../data/projects"
 
@@ -5,6 +6,21 @@ const container = {
     hidden: {},
     show: {
         transition: { staggerChildren: 0.2 }
+    }
+}
+
+const content=(project)=>{
+    if(project.demo !=="#"){
+        return(
+            
+                <a
+                href={project.demo}
+                target="_blank"
+                className="text-purple-400 hover:text-purple-500 transition"
+            >
+                Demo →
+            </a>
+        );
     }
 }
 
@@ -68,14 +84,8 @@ export default function Projects() {
                                     >
                                         GitHub →
                                     </a>
-
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        className="text-purple-400 hover:text-purple-500 transition"
-                                    >
-                                        Demo →
-                                    </a>
+                                    {content(project)}
+                                    
                                 </div>
                             </div>
 

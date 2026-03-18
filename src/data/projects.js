@@ -1,11 +1,12 @@
 const projects = [
     {
       id: 1,
-      title: "EstateHub",
+      title: "Tas - Te Acerco Salud",
       description:
-        "Plataforma inmobiliaria fullstack para gestión de propiedades, autenticación segura y panel administrativo.",
-      technologies: ["React", "Spring Boot", "SQL Server"],
-      github: "#",
+        `Aplicación web para la gestion de surtido de medicamentos para usuarios.
+        Permite que los usuarios registren que medicamentos necesitan y el sistema validara si hay existencia de estos dentro de su inventario, de existir se trazara una ruta para el repartidor.`,
+      technologies: ["Laravel", "SQL Server"],
+      github: "https://github.com/Chiquete-19/Te-Acerco-Salud",
       demo: "#",
       image:
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200",
