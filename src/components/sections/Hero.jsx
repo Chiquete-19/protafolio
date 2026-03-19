@@ -2,6 +2,23 @@
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
 
+const enviar = async()=>{
+    let a=await fetch("http://localhost:8080/sendMail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "tuemail@gmail.com",
+          message: "Hola desde React"
+        }),
+      });
+    if(a){
+        console.log("bien peño");
+      }
+    
+}
+
 const container = {
     hidden: {},
     show: {
@@ -63,7 +80,7 @@ export default function Hero() {
                      </Link>
 
 
-                    <button className="px-6 py-3 border border-slate-600 rounded-xl hover:border-blue-500 hover:text-blue-500 transition-all duration-300 hover:-translate-y-1">
+                    <button onClick={enviar} className="px-6 py-3 border border-slate-600 rounded-xl hover:border-blue-500 hover:text-blue-500 transition-all duration-300 hover:-translate-y-1">
                         Contacto
                     </button>
                 </motion.div>
