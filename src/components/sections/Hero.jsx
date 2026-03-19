@@ -2,8 +2,10 @@
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
 
+
+
 const enviar = async()=>{
-    let a=await fetch("http://localhost:8080/sendMail", {
+    let a=await fetch(import.meta.env.VITE_BACKEND_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
